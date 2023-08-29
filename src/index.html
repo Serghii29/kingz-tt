@@ -3,11 +3,148 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>Test Task</title>
+    <link rel="stylesheet" href="./styles/index.scss">
+    <link rel="stylesheet" href="./styles/header.scss">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="./styles/foter.scss">
+
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header">
+      <div class="header__wrapper">
+        <a href="#">
+          <img
+            src="../src/images/Logo.svg"
+            alt="logo icon"
+            class="header__logo"
+          >
+        </a>
+
+        <div>
+          <a href="#" class="header__link">Acceder</a>
+
+          <button type="button" class="header__btn_registrate">
+            Regístrate
+          </button>
+        </div>
+      </div>
+
+    </header>
+    <main class="main">
+      <div class="main_slider">
+        <div class="overlay"></div>
+        <div class="main_slider__container">
+          <div class="main_slider__block">
+            <div class="main_title__block">
+            </div>
+          </div>
+        </div>
+
+        <div class="main_slider__container_next active">
+          <div class="main_slider__block_next">
+            <div class="main_title__block">
+              <p class="main_title">Bono de primer</p>
+
+              <p class="main_title__middle">depósito hasta</p>
+
+              <p class="main_title__last">40 000 MXN</p>
+            </div>
+
+            <p class="main_text">COMBOBOOST hasta el 100% en apuestas combinadas</p>
+
+            <button class="main_btn__registrate">Regístrate</button>
+
+            <div class="main_deposito">
+              <p>Deposito minimo</p>
+
+              <p>500 MXN</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="main_btns">
+          <button class="main_btn__prev">
+            <svg
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                class="main_btn__prev_circle"
+                y="-0.000915527"
+                width="10"
+                height="10"
+                rx="5"
+                fill="#D9D9D9"
+              >
+            </svg>
+          </button>
+
+          <button class="main_btn__next">
+            <svg
+              width="10" height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                class="main_btn__next_circle active"
+                y="-0.000915527"
+                width="10"
+                height="10"
+                rx="5"
+                fill="#D9D9D9"
+              >
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_suscribete">
+        <img
+          class="footer_suscribete__logo"
+          src="./images/logo.svg"
+          alt="logo"
+        >
+
+        <div class="footer_suscribete__block">
+          <label for="email">
+            <input
+              id="email"
+              type="text"
+              name="email"
+              placeholder="Correo electronico"
+            >
+          </label>
+
+          <span>Suscríbete</span>
+        </div>
+
+        <img
+          class="footer_payment"
+          src="./images/footer_payment.png"
+          alt="payment system"
+        >
+
+        <img
+          class="footer_payment__mobile"
+          src="./images/footer_payment2.png"
+          alt="payment system"
+        >
+      </div>
+    </footer>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
